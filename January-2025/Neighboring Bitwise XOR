@@ -1,12 +1,19 @@
-class Solution:
-    def minimizeXor(self, num1: int, num2: int) -> int:
-        diff_set_bits = num1.bit_count() - num2.bit_count()
-        if diff_set_bits > 0:
-            # Reset the 'diff_set_bits' least significant bits of the number 'num1'
-            for _ in range(diff_set_bits):
-                num1 &= num1 - 1
-        else:
-            # Set the 'diff_set_bits' least insignificant bits of the number 'num1'
-            for _ in range(-diff_set_bits):  
-                num1 |= num1 + 1   
-        return num1
+class Solution {
+    public boolean doesValidArrayExist(int[] derived) {
+        int n=derived.length;
+        int[] org=new int[n];
+
+        //Populating the org array
+        for(int i=1; i<n; i++){
+            org[i]=derived[i-1]^org[i-1];
+        }
+
+        //Validating the rules for index i
+        for(int i=0; i<n; i++){
+            int idx=(i+1)%n;
+            if(derived[i]!=(org[i]^org[idx])) return false;
+        }
+
+        return true;
+    }
+}

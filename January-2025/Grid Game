@@ -1,0 +1,4 @@
+const gridGame = ([u, d]) => {
+    let x = u.reduce((a, b) => a + b), y = 0;
+    return Math.min(...u.map((v, i) => Math.max(x -= v, y += d[i - 1] || 0)));
+};

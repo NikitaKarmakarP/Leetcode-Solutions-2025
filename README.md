@@ -84,7 +84,7 @@ I strive to solve one DSA problem daily to stay consistent and sharp. Here’s a
 
 ---
 
-https://leetcode.com/medal/?showImg=0&id=6065677&isLevel=false
+https://assets.leetcode.com/static_assets/marketing/202501.gif
 
 ---
 

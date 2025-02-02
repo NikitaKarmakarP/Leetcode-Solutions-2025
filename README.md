@@ -4,19 +4,6 @@ Welcome to **Leetcode-Solutions-2025**, a comprehensive collection of solutions 
 
 ---
 
-## 📂 Repository Structure
-
-The repository is neatly organized into folders for easy navigation:
-
-- **January-2025**: Latest additions for the month.
-- **Solution Files**: Each file contains:
-  - **Problem Statement**: Brief description of the problem.
-  - **Approach**: Detailed explanation of the logic.
-  - **Code**: Clean and efficient implementations.
-  - **Complexity Analysis**: Insights into time and space complexity.
-
----
-
 ## 🌟 Highlights
 
 - **Comprehensive Coverage**: Solutions for a variety of problems across categories.
@@ -94,6 +81,10 @@ I strive to solve one DSA problem daily to stay consistent and sharp. Here’s a
 29. Redundant Connection
 30. Divide Nodes Into the Maximum Number of Groups
 31. Making A Large Island
+
+---
+
+https://leetcode.com/medal/?showImg=0&id=6065677&isLevel=false
 
 ---
 

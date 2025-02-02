@@ -54,6 +54,54 @@ Total Commits: 26 (and counting!)
 
 ---
 
+## 🌟Daily Challenges
+I strive to solve one DSA problem daily to stay consistent and sharp. Here’s a log of the problems I’ve worked on recently:
+
+## 🎄 Daily Challenge Log
+
+---
+
+## January 2025
+
+1. Maximum Score After Splitting a String
+2. Count Vowel Strings in Ranges
+3. Number of Ways to Split Array
+4. Unique Length-3 Palindromic Subsequences
+5. Shifting Letters II
+6. Minimum Number of Operations to Move All Balls to Each Box
+7. String Matching in an Array
+8. Count Prefix and Suffix Pairs I
+9. Counting Words With a Given Prefix
+10. Word Subsets
+11. Construct K Palindrome Strings
+12. Check if a Parentheses String Can Be Valid
+13. Minimum Length of String After Operations
+14. Find the Prefix Common Array of Two Arrays
+15. Minimize XOR
+16. Bitwise XOR of All Pairings
+17. Neighboring Bitwise XOR
+18. Minimum Cost to Make at Least One Valid Path in a Grid
+19. Trapping Rain Water II
+20. First Completely Painted Row or Column
+21. Grid Game
+22. Map of Highest Peak
+23. Count Servers that Communicate
+24. Find Eventual Safe States
+25. Make Lexicographically Smallest Array by Swapping Elements
+26. Maximum Employees to Be Invited to a Meeting
+27. Course Schedule IV
+28. Maximum Number of Fish in a Grid
+29. Redundant Connection
+30. Divide Nodes Into the Maximum Number of Groups
+31. Making A Large Island
+
+---
+
+## Februyary 2025
+
+1. Special Array I
+2. Check if Array Is Sorted and Rotated
+
 ## 🤝 Contributions
 Contributions are welcome! Follow these steps to contribute:
 

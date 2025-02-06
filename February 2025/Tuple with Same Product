@@ -1,0 +1,2 @@
+const tupleSameProduct = f = ([n, ...l], m = {}) => 
+    n ? l.reduce((res, v, _,$, p = n * v) => res + 8 * (m[p] = (m[p] | 0) + 1) - 8, 0) + f(l, m) : 0;

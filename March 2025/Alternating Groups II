@@ -1,0 +1,46 @@
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    int numberOfAlternatingGroups(vector<int>& colors, int k) {
+        // Repeat the first k-1 elements of the vector at the end to handle circularity
+        for(int i = 0; i < k - 1; i++) {
+            colors.push_back(colors[i]);
+        }
+        
+        // Vector to mark positions of alternating groups
+        vector<int> alternatingMarks;
+        alternatingMarks.push_back(0); // Start with a non-alternating mark
+        
+        // Iterate through the colors vector to find alternating groups
+        for(int i = 1; i < colors.size() - 1; i++) {
+            if(colors[i] != colors[i + 1] && colors[i + 1] == colors[i - 1]) {
+                // Found an alternating group
+                alternatingMarks.push_back(1);
+            } else {
+                // No alternating group
+                alternatingMarks.push_back(0);
+            }
+        }
+        alternatingMarks.push_back(0); // End with a non-alternating mark
+        
+        int result = 0; // Count of alternating groups
+        int currentGroupCount = 0; // Counter for current alternating group
+        
+        // Count the number of valid alternating groups of size k-2 or more
+        for(int i = 0; i < alternatingMarks.size(); i++) {
+            if(alternatingMarks[i] == 1) {
+                currentGroupCount++;
+                if(currentGroupCount >= (k - 2)) {
+                    result++;
+                    currentGroupCount--;
+                }
+            } else {
+                currentGroupCount = 0; // Reset counter if no alternating group
+            }
+        }
+
+        return result;
+    }
+};

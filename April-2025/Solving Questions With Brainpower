@@ -1,0 +1,26 @@
+class Solution:
+    def mostPoints(self, questions):
+        n = len(questions)
+        dp = [0] * (n + 1)  # DP array to store the maximum points
+        
+        # Iterate from the last question to the first
+        for i in range(n - 1, -1, -1):
+            points, brainpower = questions[i]
+            # Option 1: Skip the current question
+            skip_points = dp[i + 1]
+            # Option 2: Solve the current question (if possible)
+            solve_points = points
+            next_question_index = i + brainpower + 1
+            if next_question_index < n:
+                solve_points += dp[next_question_index]
+            # Take the maximum of both options
+            dp[i] = max(skip_points, solve_points)
+        
+        return dp[0]
+
+# Example usage
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.mostPoints([[3, 2], [4, 3], [4, 4], [2, 5]]))  # Output: 5
+    print(solution.mostPoints([[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]]))  # Output: 7
+      

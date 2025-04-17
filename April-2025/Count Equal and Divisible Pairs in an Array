@@ -1,0 +1,15 @@
+class Solution:
+    def countPairs(self, nums: List[int], k: int) -> int:
+        count = 0
+        idx = defaultdict(list)
+        for i,num in enumerate(nums):
+            idx[num].append(i)
+        for items in idx.values():
+            gcds = defaultdict(int)
+            for idx in items:
+                gcd_i_k = gcd(idx, k)
+                for gcd_j_k, gcd_count in gcds.items():
+                    if gcd_i_k * gcd_j_k % k == 0:
+                        count += gcd_count
+                gcds[gcd_i_k] += 1
+        return count
